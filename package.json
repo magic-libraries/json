@@ -1,5 +1,5 @@
 {
-  "name": "@magic-modules/json",
+  "name": "@magic-client/json",
   "version": "0.0.1",
   "scripts": {
     "start": "t -p",
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magic-modules/json.git"
+    "url": "git+https://github.com/magic-client/json.git"
   },
   "bugs": {
-    "url": "https://github.com/magic-modules/json/issues"
+    "url": "https://github.com/magic-client/json/issues"
   },
   "devDependencies": {
     "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
@@ -29,7 +29,7 @@
     "@magic/test": "0.0.12"
   },
   "author": "Wizards & Witches",
-  "homepage": "https://magic-modules.github.io/json",
+  "homepage": "https://magic-client.github.io/json",
   "license": "AGPL-3.0",
   "description": "@magic json module. returns errors instead of throwing them. checks if output of stringify should error.",
   "keywords": [
