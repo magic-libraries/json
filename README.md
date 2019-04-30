@@ -17,7 +17,7 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 [travis-image]: https://api.travis-ci.org/magic-client/json.svg?branch=master
 [travis-url]: https://travis-ci.org/magic-client/json
 [appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/json/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/jaeh/core/branch/master
+[appveyor-url]: https://ci.appveyor.com/project/jaeh/json/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-client/json/badge.svg
 [coveralls-url]: https://coveralls.io/github/magic-client/json
 [greenkeeper-image]: https://badges.greenkeeper.io/magic-client/json.svg
