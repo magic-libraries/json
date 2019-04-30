@@ -36,13 +36,15 @@ module.exports = {
 
     h2({ id: 'usage' }, 'usage:'),
     p('in a page/component, just use the LIB.JSON functions'),
-    Pre.View("module.exports = () => Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))"),
+    Pre.View(
+      "module.exports = () => Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))",
+    ),
     p('renders'),
     Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
 
     h2({ id: 'caveat' }, 'caveat'),
     p([
-      'only use this library without checking it\'s return value',
+      "only use this library without checking it's return value",
       ' if you know that your input json is not malformed.',
       ' in all other cases the following pattern should be employed (and enhanced with custom error messages).',
     ]),
@@ -62,16 +64,10 @@ module.exports = {
 }
 `),
 
-
-
-
     h2({ id: 'source' }, 'source'),
     p([
       'the source for this page is in the ',
-      Link(
-        { to: 'https://github.com/magic-client/json/tree/master/example' },
-        'example directory',
-      ),
+      Link({ to: 'https://github.com/magic-client/json/tree/master/example' }, 'example directory'),
       ' and gets built and published to github using ',
       Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
     ]),

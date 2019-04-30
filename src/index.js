@@ -5,7 +5,7 @@ const tryCatch = fn => (...args) => {
       throw new Error('Serialization error')
     }
     return res
-  } catch(e) {
+  } catch (e) {
     return e
   }
 }

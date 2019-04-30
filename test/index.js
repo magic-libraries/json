@@ -12,11 +12,23 @@ brokenObject.brokenToo.broken = brokenObject.brokenToo
 
 module.exports = {
   parse: [
-    { fn: parse(workingString), expect: is.deep.equal(workingObject), info: 'successfully parses well formed object' },
+    {
+      fn: parse(workingString),
+      expect: is.deep.equal(workingObject),
+      info: 'successfully parses well formed object',
+    },
     { fn: tryCatch(parse, broken), expect: is.error, info: 'returns error if string is broken' },
   ],
   stringify: [
-    { fn: stringify(workingObject), expect: workingString, info: 'successfully stringifies well formed object' },
-    { fn: stringify(brokenObject), expect: is.error, info: 'returns error if object is broken after serialization' },
+    {
+      fn: stringify(workingObject),
+      expect: workingString,
+      info: 'successfully stringifies well formed object',
+    },
+    {
+      fn: stringify(brokenObject),
+      expect: is.error,
+      info: 'returns error if object is broken after serialization',
+    },
   ],
 }
