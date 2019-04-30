@@ -3,7 +3,7 @@
 json client lib for
 this is the [@magic](https://magic.github.io/core)-client json library.
 
-it returns errors instead of throwing them and catches (some) malformed objects when stringifying.',
+it returns errors instead of throwing them and catches (some) malformed objects when stringifying.
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
@@ -38,7 +38,7 @@ npm install --save-exact magic-client/json
 ```
 
 #### <a name="require"></a>require
-first add the client lib to the app.lib, note that we do not actually require the library.'),
+first add the client lib to the app.lib, note that we do not actually require the library.
 
 ```javascript
 // /app.js
@@ -51,7 +51,7 @@ module.exports = {
 ```
 
 #### <a name="usage"></a>usage
-in a page/component, just use the LIB.JSON functions'),
+in a page/component, just use the LIB.JSON functions
 ```javascript
 module.exports = () =>
   Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))
@@ -62,8 +62,8 @@ LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
 ```
 
 #### <a name="caveat"></a>caveat
-only use this library without checking it\'s return value',
-if you know that your input json is not malformed.',
+only use this library without checking it\'s return value
+if you know that your input json is not malformed.
 in all other cases the following pattern should be employed
 (and enhanced with custom error messages).
 
