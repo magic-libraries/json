@@ -2,8 +2,10 @@ const { tryCatch, is } = require('@magic/test')
 const { parse, stringify } = require('../src')
 
 const workingObject = { key: 'value', key2: 'value2' }
-const workingString = stringify(workingObject)
+const workingString = JSON.stringify(workingObject)
 const broken = `{"key": "value", 'key2': "value"}`
+
+const workingStringNewlined = JSON.stringify(workingObject, null, 2)
 
 const brokenObject = []
 brokenObject.broken = 'yes'
@@ -29,6 +31,11 @@ module.exports = {
       fn: stringify(brokenObject),
       expect: is.error,
       info: 'returns error if object is broken after serialization',
+    },
+    {
+      fn: stringify(workingObject, null, 2),
+      expect: workingStringNewlined,
+      info: 'can handle indented newlines',
     },
   ],
 }
