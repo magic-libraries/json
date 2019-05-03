@@ -1,6 +1,10 @@
 {
   "name": "@magic-client/json",
   "version": "0.0.1",
+  "author": "Wizards & Witches",
+  "description": "@magic json module. returns errors instead of throwing them. checks if output of stringify should error.",
+  "license": "AGPL-3.0",
+  "homepage": "https://magic-client.github.io/json",
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -28,10 +32,6 @@
     "@magic/core": "github:magic/core",
     "@magic/test": "0.0.12"
   },
-  "author": "Wizards & Witches",
-  "homepage": "https://magic-client.github.io/json",
-  "license": "AGPL-3.0",
-  "description": "@magic json module. returns errors instead of throwing them. checks if output of stringify should error.",
   "keywords": [
     "magic",
     "json",
@@ -42,34 +42,6 @@
     {
       "name": "jascha ehrenreich",
       "github": "jaeh"
-    },
-    {
-      "name": "philipp tiefenbacher",
-      "github": "wizard23"
-    },
-    {
-      "name": "tom peak",
-      "github": "tompeak"
-    },
-    {
-      "name": "phileas lebada",
-      "github": "norpol"
-    },
-    {
-      "name": "litto",
-      "github": "mslitto"
-    },
-    {
-      "name": "daniel safar",
-      "github": "n1c3"
-    },
-    {
-      "name": "jay vaughan",
-      "github": "seclorum"
-    },
-    {
-      "name": "alexander weiss",
-      "github": "ylem235"
     }
   ]
 }
