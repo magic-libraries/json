@@ -13,13 +13,6 @@ module.exports = () => [
   }),
 
   h3({ id: 'installation' }, 'installation:'),
-  p([
-    'installation is done using npm. ',
-    ' for now, all magic modules are living on github and not on npm.',
-  ]),
-  p('note the missing @ before magic-libraries.'),
-  p('this is how we install npm modules from github.'),
-
   Pre('npm install magic-libraries/json'),
 
   h3({ id: 'require' }, 'require:'),
