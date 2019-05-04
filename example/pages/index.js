@@ -20,11 +20,11 @@ module.exports = () => [
   p('note the missing @ before magic-client.'),
   p('this is how we install npm modules from github.'),
 
-  Pre.View('npm install magic-client/json'),
+  Pre('npm install magic-client/json'),
 
   h3({ id: 'require' }, 'require:'),
   p('first add the client lib to the app.lib, note that we do not actually require the library.'),
-  Pre.View(`
+  Pre(`
 // /app.js
 module.exports = {
   //...other app exports
@@ -35,11 +35,11 @@ module.exports = {
 
   h3({ id: 'usage' }, 'usage:'),
   p('in a page/component, just use the LIB.JSON functions'),
-  Pre.View(
-    "module.exports = () => Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))",
+  Pre(
+    "module.exports = () => Pre(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))",
   ),
   p('renders'),
-  Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
+  Pre(LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
 
   h3({ id: 'caveat' }, 'caveat'),
   p([
@@ -48,7 +48,7 @@ module.exports = {
     ' in all other cases the following pattern should be employed (and enhanced with custom error messages).',
   ]),
 
-  Pre.View(`
+  Pre(`
 module.exports = {
   ViewStringify: unsafe => {
     const result = LIB.JSON.stringify(unsafe)
