@@ -1,14 +1,14 @@
 module.exports = () => [
-  h2('@magic-client/json'),
+  h2('@magic-libraries/json'),
   p([
     'this is the ',
-    Link({ to: 'https://github.com/magic-client' }, '@magic-client'),
+    Link({ to: 'https://github.com/magic-libraries' }, '@magic-libraries'),
     ' json library. it returns errors instead of throwing them',
     ' and catches (some) malformed objects when stringifying.',
   ]),
 
   GitBadges({
-    project: 'magic-client/json',
+    project: 'magic-libraries/json',
     appveyor: 'jaeh/json',
   }),
 
@@ -17,10 +17,10 @@ module.exports = () => [
     'installation is done using npm. ',
     ' for now, all magic modules are living on github and not on npm.',
   ]),
-  p('note the missing @ before magic-client.'),
+  p('note the missing @ before magic-libraries.'),
   p('this is how we install npm modules from github.'),
 
-  Pre('npm install magic-client/json'),
+  Pre('npm install magic-libraries/json'),
 
   h3({ id: 'require' }, 'require:'),
   p('first add the client lib to the app.lib, note that we do not actually require the library.'),
@@ -29,7 +29,7 @@ module.exports = () => [
 module.exports = {
   //...other app exports
   lib: {
-    JSON: '@magic-client/json',
+    JSON: '@magic-libraries/json',
   },
 }`),
 
@@ -66,7 +66,7 @@ module.exports = {
   h3({ id: 'source' }, 'source'),
   p([
     'the source for this page is in the ',
-    Link({ to: 'https://github.com/magic-client/json/tree/master/example' }, 'example directory'),
+    Link({ to: 'https://github.com/magic-libraries/json/tree/master/example' }, 'example directory'),
     ' and gets built and published to github using ',
     Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
   ]),

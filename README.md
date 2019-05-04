@@ -1,4 +1,4 @@
-## @magic-client/json
+## @magic-libraries/json
 
 json client lib for
 this is the [@magic](https://magic.github.io/core)-client json library.
@@ -12,18 +12,18 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
-[npm-image]: https://img.shields.io/npm/v/@magic-client/json.svg
-[npm-url]: https://www.npmjs.com/package/@magic-client/json
-[travis-image]: https://api.travis-ci.org/magic-client/json.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-client/json
-[appveyor-image]: https://img.shields.io/appveyor/ci/magic-client/json/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/magic-client/json/branch/master
-[coveralls-image]: https://coveralls.io/repos/github/magic-client/json/badge.svg
-[coveralls-url]: https://coveralls.io/github/magic-client/json
-[greenkeeper-image]: https://badges.greenkeeper.io/magic-client/json.svg
-[greenkeeper-url]: https://badges.greenkeeper.io/magic-client/json.svg
-[snyk-image]: https://snyk.io/test/github/magic-client/json/badge.svg
-[snyk-url]: https://snyk.io/test/github/magic-client/json
+[npm-image]: https://img.shields.io/npm/v/@magic-libraries/json.svg
+[npm-url]: https://www.npmjs.com/package/@magic-libraries/json
+[travis-image]: https://api.travis-ci.org/magic-libraries/json.svg?branch=master
+[travis-url]: https://travis-ci.org/magic-libraries/json
+[appveyor-image]: https://img.shields.io/appveyor/ci/magiclibraries/json/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/magiclibraries/json/branch/master
+[coveralls-image]: https://coveralls.io/repos/github/magic-libraries/json/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-libraries/json
+[greenkeeper-image]: https://badges.greenkeeper.io/magic-libraries/json.svg
+[greenkeeper-url]: https://badges.greenkeeper.io/magic-libraries/json.svg
+[snyk-image]: https://snyk.io/test/github/magic-libraries/json/badge.svg
+[snyk-url]: https://snyk.io/test/github/magic-libraries/json
 
 * [installation](#install)
 * [require](#require)
@@ -34,7 +34,7 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 
 #### <a name="install"></a>installation
 ```bash
-npm install --save-exact magic-client/json
+npm install --save-exact magic-libraries/json
 ```
 
 #### <a name="require"></a>require
@@ -45,7 +45,7 @@ first add the client lib to the app.lib, note that we do not actually require th
 module.exports = {
   //...other app exports
   lib: {
-    JSON: '@magic-client/json',
+    JSON: '@magic-libraries/json',
   },
 }
 ```
@@ -84,6 +84,6 @@ module.exports = {
 
 #### <a name="source"></a>source
 the source for this page is in the
-[example directory](https://github.com/magic-client/json/tree/master/example)
+[example directory](https://github.com/magic-libraries/json/tree/master/example)
 and gets built and published to github using
 [@magic/core](https://github.com/magic/core)

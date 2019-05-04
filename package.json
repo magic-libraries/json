@@ -1,10 +1,10 @@
 {
-  "name": "@magic-client/json",
+  "name": "@magic-libraries/json",
   "version": "0.0.1",
   "author": "Wizards & Witches",
-  "description": "@magic json module. returns errors instead of throwing them. checks if output of stringify should error.",
+  "description": "@magic json library. returns errors instead of throwing them. checks if output of stringify should error.",
   "license": "AGPL-3.0",
-  "homepage": "https://magic-client.github.io/json",
+  "homepage": "https://magic-libraries.github.io/json",
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -20,10 +20,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magic-client/json.git"
+    "url": "git+https://github.com/magic-libraries/json.git"
   },
   "bugs": {
-    "url": "https://github.com/magic-client/json/issues"
+    "url": "https://github.com/magic-libraries/json/issues"
   },
   "devDependencies": {
     "@magic-modules/git-badges": "github:magic-modules/git-badges",
