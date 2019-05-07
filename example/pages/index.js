@@ -7,10 +7,7 @@ module.exports = () => [
     ' and catches (some) malformed objects when stringifying.',
   ]),
 
-  GitBadges({
-    project: 'magic-libraries/json',
-    appveyor: 'jaeh/json',
-  }),
+  GitBadges('magic-libraries/json'),
 
   h3({ id: 'installation' }, 'installation:'),
   Pre('npm install magic-libraries/json'),
