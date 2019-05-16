@@ -10,7 +10,6 @@ const tryCatch = fn => (...args) => {
   }
 }
 
-module.exports = {
-  parse: tryCatch(JSON.parse),
-  stringify: tryCatch(JSON.stringify),
-}
+export const parse = tryCatch(JSON.parse)
+export const stringify = tryCatch(JSON.stringify)
+
