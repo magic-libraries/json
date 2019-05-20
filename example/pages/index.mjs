@@ -1,4 +1,4 @@
-module.exports = () => [
+export const View = () => [
   h2('@magic-libraries/json'),
   p([
     'this is the ',
@@ -19,17 +19,17 @@ module.exports = () => [
 module.exports = {
   //...other app exports
   lib: {
-    JSON: '@magic-libraries/json',
+    json: '@magic-libraries/json',
   },
 }`),
 
   h3({ id: 'usage' }, 'usage:'),
-  p('in a page/component, just use the LIB.JSON functions'),
+  p('in a page/component, just use the lib.json functions'),
   Pre(
-    "module.exports = () => Pre(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))",
+    "module.exports = () => Pre(lib.json.stringify({ some: { object: ['with', 'values'] } }))",
   ),
   p('renders'),
-  Pre(LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
+  Pre(lib.json.stringify({ some: { object: ['with', 'values'] } })),
 
   h3({ id: 'caveat' }, 'caveat'),
   p([
@@ -41,11 +41,11 @@ module.exports = {
   Pre(`
 module.exports = {
   ViewStringify: unsafe => {
-    const result = LIB.JSON.stringify(unsafe)
+    const result = lib.json.stringify(unsafe)
     return div([result.message ? result.message : result])
   },
   ViewParse: unsafe => {
-    const result = LIB.JSON.parse(unsafe)
+    const result = lib.json.parse(unsafe)
     // in this case we can not check for .message,
     // since unsafe might have a .message key after parsing
     div([result instanceof Error ? result.message : result])
