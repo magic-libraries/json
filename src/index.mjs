@@ -11,5 +11,9 @@ const tryCatch = fn => (...args) => {
 }
 
 export const parse = tryCatch(JSON.parse)
-export const stringify = tryCatch(JSON.stringify)
+export const stringify =tryCatch(JSON.stringify)
 
+export default {
+  parse,
+  stringify,
+}
