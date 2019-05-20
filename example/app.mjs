@@ -3,7 +3,6 @@ export const state = {
   logotext: 'json',
   menu: [
     { to: '/#installation', text: 'installation' },
-    { to: '/#require', text: 'require' },
     { to: '/#usage', text: 'usage' },
     { to: '/#caveat', text: 'caveat' },
     { to: '/#source', text: 'source' },

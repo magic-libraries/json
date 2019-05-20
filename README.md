@@ -28,7 +28,6 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 [snyk-url]: https://snyk.io/test/github/magic-libraries/json
 
 * [installation](#install)
-* [require](#require)
 * [usage](#usage)
 * [caveat](#caveat)
 * [caveat](#source)
@@ -37,19 +36,6 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 #### <a name="install"></a>installation
 ```bash
 npm install --save-exact magic-libraries/json
-```
-
-#### <a name="require"></a>require
-first add the client lib to the app.lib, note that we do not actually require the library.
-
-```javascript
-// /app.js
-module.exports = {
-  //...other app exports
-  lib: {
-    JSON: '@magic-libraries/json',
-  },
-}
 ```
 
 #### <a name="usage"></a>usage
