@@ -5,9 +5,9 @@
   "description": "@magic json library. returns errors instead of throwing them. checks if output of stringify should error.",
   "license": "AGPL-3.0",
   "homepage": "https://magic-libraries.github.io/json",
-  "main": "src/index.mjs",
-  "module": "src/index.mjs",
-  "type": "module",
+  "engines": {
+    "node": ">=12.2.0"
+  },
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -17,6 +17,9 @@
     "dev": "magic dev --watch src",
     "calls": "calls"
   },
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
   "files": [
     "src"
   ],
