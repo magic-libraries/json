@@ -5,6 +5,8 @@ this is the [@magic](https://magic.github.io/core)-client json library.
 
 it returns errors instead of throwing them and catches (some) malformed objects when stringifying.
 
+[html-docs](https://magic-libraries.github.io/json)
+
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
 [![Windows Build Status][appveyor-image]][appveyor-url]
