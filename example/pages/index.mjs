@@ -14,9 +14,7 @@ export const View = () => [
 
   h3({ id: 'usage' }, 'usage:'),
   p('in a page/component, just use the lib.json functions'),
-  Pre(
-    "module.exports = () => Pre(lib.json.stringify({ some: { object: ['with', 'values'] } }))",
-  ),
+  Pre("module.exports = () => Pre(lib.json.stringify({ some: { object: ['with', 'values'] } }))"),
   p('renders'),
   Pre(lib.json.stringify({ some: { object: ['with', 'values'] } })),
 
@@ -45,7 +43,10 @@ module.exports = {
   h3({ id: 'source' }, 'source'),
   p([
     'the source for this page is in the ',
-    Link({ to: 'https://github.com/magic-libraries/json/tree/master/example' }, 'example directory'),
+    Link(
+      { to: 'https://github.com/magic-libraries/json/tree/master/example' },
+      'example directory',
+    ),
     ' and gets built and published to github using ',
     Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
   ]),
