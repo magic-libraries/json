@@ -20,23 +20,27 @@ export const View = () => [
 
   h3({ id: 'caveat' }, 'caveat'),
   p([
+    'this library is intended to handle incoming web traffic.',
+    ' we can never be sure that this incoming packets will not include faulty json.'
+  ]),
+  p([
     "only use this library without checking it's return value",
     ' if you know that your input json is not malformed.',
-    ' in all other cases the following pattern should be employed (and enhanced with custom error messages).',
+    ' in all other cases the following pattern should be employed ',
+    ' (and enhanced with custom error messages).',
   ]),
 
   Pre(`
-module.exports = {
-  ViewStringify: unsafe => {
-    const result = lib.json.stringify(unsafe)
-    return div([result.message ? result.message : result])
-  },
-  ViewParse: unsafe => {
-    const result = lib.json.parse(unsafe)
-    // in this case we can not check for .message,
-    // since unsafe might have a .message key after parsing
-    div([result instanceof Error ? result.message : result])
-  },
+export const ViewStringify = unsafe => {
+  const result = lib.json.stringify(unsafe)
+  return div([result.message ? result.message : result])
+}
+
+export const ViewParse = unsafe => {
+  const result = lib.json.parse(unsafe)
+  // in this case we can not check for .message,
+  // since unsafe might have a .message key after parsing
+  div([result instanceof Error ? result.message : result])
 }
 `),
 
