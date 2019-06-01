@@ -1,5 +1,6 @@
-export const View = () => [
-  h2('@magic-libraries/json'),
+export const View = state => [
+  h2(state.title),
+
   p([
     'this is the ',
     Link({ to: 'https://github.com/magic-libraries' }, '@magic-libraries'),

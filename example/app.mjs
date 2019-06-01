@@ -1,6 +1,8 @@
 export const state = {
-  logo: '/img/logo.png',
-  logotext: 'json',
+  title: '@magic-libraries/json',
+  description: 'json client lib for @magic. returns errors instead of throwing them.',
+
+  logotext: '@magic-libraries/json',
   menu: [
     { to: '/#installation', text: 'installation' },
     { to: '/#usage', text: 'usage' },
