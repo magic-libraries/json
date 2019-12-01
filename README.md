@@ -16,8 +16,8 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 
 [npm-image]: https://img.shields.io/npm/v/@magic-libraries/json.svg
 [npm-url]: https://www.npmjs.com/package/@magic-libraries/json
-[travis-image]: https://api.travis-ci.org/magic-libraries/json.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-libraries/json
+[travis-image]: https://img.shields.io/travis/com/magic-libraries/json/master
+[travis-url]: https://travis-ci.com/magic-libraries/json
 [appveyor-image]: https://img.shields.io/appveyor/ci/magiclibraries/json/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magiclibraries/json/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-libraries/json/badge.svg
