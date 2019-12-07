@@ -35,7 +35,7 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 
 #### <a name="install"></a>installation
 ```bash
-npm install --save-exact magic-libraries/json
+npm install --save-exact @magic-libraries/json
 ```
 
 #### <a name="usage"></a>usage

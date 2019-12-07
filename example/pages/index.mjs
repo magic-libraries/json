@@ -11,7 +11,7 @@ export const View = state => [
   GitBadges('magic-libraries/json'),
 
   h3({ id: 'installation' }, 'installation:'),
-  Pre('npm install magic-libraries/json'),
+  Pre('npm install @magic-libraries/json'),
 
   h3({ id: 'usage' }, 'usage:'),
   p('in a page/component, just use the lib.json functions'),
