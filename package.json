@@ -44,7 +44,9 @@
     "magic",
     "json",
     "client",
-    "lib"
+    "browser",
+    "magic-libraries",
+    "hyperapp"
   ],
   "contributors": [
     {
