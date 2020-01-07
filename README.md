@@ -80,3 +80,8 @@ and gets built and published to github using
 
 ##### 0.0.1
 first release
+
+##### 0.0.2 
+require node 13.5.0
+
+##### 0.0.3 - unreleased
