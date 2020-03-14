@@ -1,13 +1,12 @@
-const tryCatch = fn => (...args) => {
-  try {
-    return fn(...args)
-  } catch (e) {
-    return e
-  }
+// the import and const lib = statements are only here for testing.
+import tryCatch from '@magic-libraries/try-catch'
+
+const lib = {
+  tryCatch,
 }
 
-export const parse = tryCatch(JSON.parse)
-export const stringify = tryCatch(JSON.stringify)
+export const parse = lib.tryCatch(JSON.parse)
+export const stringify = lib.tryCatch(JSON.stringify)
 
 export default {
   parse,
