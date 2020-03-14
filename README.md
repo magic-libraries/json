@@ -27,13 +27,12 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 [snyk-image]: https://snyk.io/test/github/magic-libraries/json/badge.svg
 [snyk-url]: https://snyk.io/test/github/magic-libraries/json
 
-* [installation](#install)
+* [installation](#installation)
 * [usage](#usage)
 * [caveat](#caveat)
-* [caveat](#source)
+* [demo source](#source)
 
-
-#### <a name="install"></a>installation
+#### installation
 ```bash
 npm install --save-exact @magic-libraries/json
 ```
@@ -49,8 +48,8 @@ renders
 LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
 ```
 
-#### <a name="caveat"></a>caveat
-only use this library without checking it\'s return value
+#### caveat
+only use this library without checking it's return value
 if you know that your input json is not malformed.
 in all other cases the following pattern should be employed
 (and enhanced with custom error messages).
@@ -81,7 +80,8 @@ and gets built and published to github using
 ##### 0.0.1
 first release
 
-##### 0.0.2 
-require node 13.5.0
+##### 0.0.2
+* require node 13.5.0
+* use @magic-libraries/try-catch
 
 ##### 0.0.3 - unreleased
