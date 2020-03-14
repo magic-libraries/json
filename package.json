@@ -1,6 +1,6 @@
 {
   "name": "@magic-libraries/json",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Wizards & Witches",
   "description": "@magic json library. returns errors instead of throwing them. checks if output of stringify should error.",
   "license": "AGPL-3.0",
