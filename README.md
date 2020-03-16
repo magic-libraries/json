@@ -89,5 +89,8 @@ first release
 ##### 0.0.4
 require @magic-libraries/try-catch from npm
 
-##### 0.0.5 - unreleased
+##### 0.0.5
+do not import tryCatch in src/index.mjs
+
+##### 0.0.6 - unreleased
 ...
