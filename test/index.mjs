@@ -3,8 +3,6 @@ import tryCatch from '@magic-libraries/try-catch'
 
 global.lib = { tryCatch }
 
-import { parse, stringify } from '../src/index.mjs'
-
 const workingObject = { key: 'value', key2: 'value2' }
 const workingString = JSON.stringify(workingObject)
 const broken = `{"key": "value", 'key2': "value"}`
@@ -14,20 +12,29 @@ const brokenObject = {
 brokenObject.brokenObject = brokenObject
 const workingStringNewlined = JSON.stringify(workingObject, null, 2)
 
+const beforeAll = async () => {
+  global.lib = { tryCatch }
+
+  const library = await import('../src/index.mjs')
+  global.parse = library.parse
+  global.stringify = library.stringify
+}
+
 export default {
+  beforeAll,
   parse: [
     {
-      fn: parse(workingString),
+      fn: () => parse(workingString),
       expect: is.deep.equal(workingObject),
       info: 'successfully parses well formed object',
     },
     {
-      fn: parse(broken),
+      fn: () => parse(broken),
       expect: is.error,
       info: 'returns error if string is broken',
     },
     {
-      fn: parse([() => {}]),
+      fn: () => parse([() => {}]),
       expect: is.error,
       info: 'mocked broken res returns error',
     },
@@ -35,17 +42,17 @@ export default {
 
   stringify: [
     {
-      fn: stringify(workingObject),
+      fn: () => stringify(workingObject),
       expect: workingString,
       info: 'successfully stringifies well formed object',
     },
     {
-      fn: stringify(brokenObject),
+      fn: () => stringify(brokenObject),
       expect: is.error,
       info: 'returns error if object is broken after serialization',
     },
     {
-      fn: stringify(workingObject, null, 2),
+      fn: () => stringify(workingObject, null, 2),
       expect: workingStringNewlined,
       info: 'can handle indented newlines',
     },
