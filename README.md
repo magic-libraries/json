@@ -83,14 +83,17 @@ first release
 ##### 0.0.2
 * require node 13.5.0
 
-##### 0.0.3
+##### 0.0.3 - BROKEN
 * use @magic-libraries/try-catch
 
-##### 0.0.4
+##### 0.0.4 - BROKEN
 require @magic-libraries/try-catch from npm
 
-##### 0.0.5
+##### 0.0.5 - BROKEN
 do not import tryCatch in src/index.mjs
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+FIX: @magic-libaries/tryCatch usage.
+
+##### 0.0.7 - unreleased
 ...
