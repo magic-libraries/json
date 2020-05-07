@@ -93,10 +93,8 @@ require @magic-libraries/try-catch from npm
 do not import tryCatch in src/index.mjs
 
 ##### 0.0.6
-FIX: @magic-libaries/tryCatch usage.
+* FIX: @magic-libaries/tryCatch usage.
+* bump required node version 14.2.0
 
-##### 0.0.7
-bump required node version
-
-##### 0.0.8 - unreleased
+##### 0.0.7 - unreleased
 ...
