@@ -96,5 +96,8 @@ do not import tryCatch in src/index.mjs
 * FIX: @magic-libaries/tryCatch usage.
 * bump required node version 14.2.0
 
-##### 0.0.7 - unreleased
+##### 0.0.7 
+bump required node version to 14.15.4
+
+##### 0.0.8 - unreleased
 ...
