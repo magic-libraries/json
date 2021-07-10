@@ -27,7 +27,7 @@ this library is intended to handle incoming web traffic.
 we can never be sure that this incoming packets will not include faulty json.
 
 to use this library without checking it's return value
-your input json [MUST](https://tools.ietf.org/html/rfc2119#section-1) be wellformed.
+your input json [MUST](https://datatracker.ietf.org/doc/html/rfc2119#section-1) be wellformed.
 
 in all (other) cases the following pattern should be employed
 (and enhanced with custom error messages).
