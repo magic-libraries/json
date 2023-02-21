@@ -27,28 +27,33 @@ it returns errors instead of throwing them and catches (some) malformed objects 
 [snyk-image]: https://snyk.io/test/github/magic-libraries/json/badge.svg
 [snyk-url]: https://snyk.io/test/github/magic-libraries/json
 
-* [installation](#installation)
-* [usage](#usage)
-* [caveat](#caveat)
-* [demo source](#source)
+- [installation](#installation)
+- [usage](#usage)
+- [caveat](#caveat)
+- [demo source](#source)
 
 #### installation
+
 ```bash
 npm install --save-exact @magic-libraries/json
 ```
 
 #### <a name="usage"></a>usage
+
 in a page/component, just use the LIB.JSON functions
+
 ```javascript
-module.exports = () =>
-  Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))
+module.exports = () => Pre.View(LIB.JSON.stringify({ some: { object: ['with', 'values'] } }))
 ```
+
 renders
+
 ```javascript
 LIB.JSON.stringify({ some: { object: ['with', 'values'] } })),
 ```
 
 #### caveat
+
 only use this library without checking it's return value
 if you know that your input json is not malformed.
 in all other cases the following pattern should be employed
@@ -70,6 +75,7 @@ module.exports = {
 ```
 
 #### <a name="source"></a>source
+
 the source for this page is in the
 [example directory](https://github.com/magic-libraries/json/tree/master/example)
 and gets built and published to github using
@@ -78,38 +84,50 @@ and gets built and published to github using
 #### changelog
 
 ##### 0.0.1
+
 first release
 
 ##### 0.0.2
-* require node 13.5.0
+
+- require node 13.5.0
 
 ##### 0.0.3 - BROKEN
-* use @magic-libraries/try-catch
+
+- use @magic-libraries/try-catch
 
 ##### 0.0.4 - BROKEN
+
 require @magic-libraries/try-catch from npm
 
 ##### 0.0.5 - BROKEN
+
 do not import tryCatch in src/index.mjs
 
 ##### 0.0.6
-* FIX: @magic-libaries/tryCatch usage.
-* bump required node version 14.2.0
+
+- FIX: @magic-libaries/tryCatch usage.
+- bump required node version 14.2.0
 
 ##### 0.0.7
+
 bump required node version to 14.15.4
 
 ##### 0.0.8
+
 update dependencies
 
 ##### 0.0.9
+
 update dependencies
 
 ##### 0.0.10
+
 update dependencies
 
 ##### 0.0.11
+
 update dependencies
 
 ##### 0.0.12 - unreleased
+
 ...
