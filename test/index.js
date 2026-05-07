@@ -15,7 +15,7 @@ const workingStringNewlined = JSON.stringify(workingObject, null, 2)
 const beforeAll = async () => {
   global.lib = { tryCatch }
 
-  const library = await import('../src/index.mjs')
+  const library = await import('../src/index.js')
   global.parse = library.parse
   global.stringify = library.stringify
 }
